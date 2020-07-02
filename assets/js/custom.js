@@ -1,0 +1,7 @@
+jQuery(document).ready(function(){
+	
+	$('.links .button061').click(function(){$('html,body').animate({scrollTop:$('.section-title ').offset().top},1000);});
+	$('.links .button06').click(function(){event.preventDefault();$('.full').fadeOut(200,function(){window.location.href="reg.html"})});
+	$('#msform .back-m').click(function(){event.preventDefault();$('#msform').fadeOut(300,function(){window.location.href="index.html"})});
+	$('.links .button062').click(function(){event.preventDefault();$('.full').fadeOut(200,function(){window.location.href="EVENTS/index.html"})});
+	$('.back-m1').click(function(){document.title="Interface | XV BETA";$('.und').hide(100);$('.back-m1').hide(100);$("html, body").css("overflow","visble");$("html, body").animate({scrollTop:0},"slow");$('.coming-soon').animate({left:'0px'},400);$('.memb').animate({left:'0px'},400);$('.social-btn-container').animate({left:'0px'},400);$('#footer-section').animate({left:'0'},400);});var finalDate='2015/08/17';$('div.counter').countdown(finalDate).on('update.countdown',function(event){$(this).html(event.strftime('<div class="days-wrapper"><span class="days">%D</span><br>days</div>'+'<div class="hours-wrapper"><span class="hours">%H</span><br>hours</div>'+'<div class="minutes-wrapper"><span class="minutes">%M</span><br>minutes</div>'+'<div class="seconds-wrapper"><span class="seconds">%S</span><br>seconds</div>'));});});
